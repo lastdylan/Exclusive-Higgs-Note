@@ -1,0 +1,100 @@
+\documentclass{article}
+ \usepackage{feynmp}
+ \usepackage[pdftex]{graphicx}
+ \DeclareGraphicsRule{*}{mps}{*}{} 
+
+\begin{document}
+
+\begin{fmffile}{fgraphs}
+
+\begin{fmfgraph*}(200,200)
+%bottom and top verticies
+  \fmfleft{P1,P2}
+  \fmfright{P1',H,P2'}
+%incoming protons to gluon vertices
+  \fmf{fermion,tension=2,lab=$P_1$}{P1,g1}
+  \fmf{fermion,tension=2,lab=$P_2$}{P2,g2}
+%blobs at gluon vertices, 0.16w is the size of blob
+\fmfblob{.16w}{g1,g2}
+\fmf{gluon}{g1,v1}
+\fmf{gluon}{g1,g2}
+\fmf{gluon}{v2,g2}
+%quark loop was here
+\fmf{fermion, tension=1, lab.side=left,lab=$t$}{t,v1}
+\fmf{fermion, tension=1.2, lab.side=left,lab=$t$}{v1,v2}
+\fmf{fermion, tension=1,lab.side=left,lab=$t$}{v2,t}
+\fmf{dashes, lab=$H$}{t,H}
+%%gluon from P1 to loop
+%\fmf{gluon}{g1,K1}
+%%gluon from P2 to loop
+%\fmf{gluon}{g2,K2}
+%%quark loop was here
+%\fmf{fermion, lab.side=right,lab=$b$}{K3,H}
+%outgoing protons
+\fmf{fermion}{g1,P1'}
+\fmf{fermion}{g2,P2'}
+%freeze everything in place
+%\fmffreeze
+%\renewcommand{\P}[3]{\fmfi{plain}{%
+%    vpath(__#1,__#2) shifted (thick*(#3))}}
+%%lines on P1
+%\P{P1}{g1}{2,-1}
+%\P{P1}{g1}{-2,1}
+%%lines on p2
+%\P{P2}{g2}{2,1}
+%\P{P2}{g2}{-2,-1}
+%%lines on P1'
+%\P{g1}{P1'}{-2,-1}
+%\P{g1}{P1'}{2,1}
+%%lines on P2'
+%\P{g2}{P2'}{-2,-1}
+%\P{g2}{P2'}{2,1}
+\end{fmfgraph*}
+\end{fmffile}
+\end{document}
+
+%\begin{figure}
+%\centering
+%\begin{fmfgraph*}(200,200)
+%%bottom and top verticies
+%  \fmfbottom{P1,P2}
+%  \fmftop{P1',b,bbar,P2'}
+%%incoming protons to gluon vertices
+%  \fmf{fermion,tension=2,lab=$P_1$}{P1,g1}
+%  \fmf{fermion,tension=2,lab=$P_2$}{P2,g2}
+%%blobs at gluon vertices, 0.16w is the size of blob
+%\fmfblob{.16w}{g1,g2}
+%%gluon from P1 to vertex1
+%\fmf{gluon,lab.side=right,lab=$x_{1}P_{1}$}{g1,v1}
+%%gluon from P2 to vertex2 - note change of order!
+%\fmf{gluon,lab.side=right,lab=$x_{2}P_{2}$}{v2,g2}
+%%quark loop was here
+%\fmf{fermion, tension=.6, lab.side=right,lab=$b$}{v1,b}
+%\fmf{fermion, tension=1.2}{v2,v1}
+%\fmf{fermion, tension=.6, lab.side=right,lab=$\overline{b}$}{bbar,v2}
+%%outgoing protons
+%\fmf{fermion}{g1,P1'}
+%\fmf{fermion}{g2,P2'}
+%%freeze everything in place
+%\fmffreeze
+%\renewcommand{\P}[3]{\fmfi{plain}{%
+%    vpath(__#1,__#2) shifted (thick*(#3))}}
+%%lines on P1
+%\P{P1}{g1}{2,0}
+%\P{P1}{g1}{-2,1}
+%%lines on p2
+%\P{P2}{g2}{2,1}
+%\P{P2}{g2}{-2,0}
+%%lines on P1'
+%\P{g1}{P1'}{-2,-1}
+%\P{g1}{P1'}{2,0}
+%%lines on P2'
+%\P{g2}{P2'}{-2,0}
+%\P{g2}{P2'}{2,-1}
+%\end{fmfgraph*}
+%\caption{The predominant production mechanism of $b\overline{b}$ pairs at LHCb.}
+%\label{ch2:fig:gluon_fusion}
+%\end{figure}
+%
+%
+%\end{document}

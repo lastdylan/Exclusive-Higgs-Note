@@ -1,0 +1,236 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_5) (format=latex 2014.1.10)  22 MAR 2015 10:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**cartoon.tex
+(./cartoon.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 44 languages loaded.
+(/opt/local/share/texmf-texlive/tex/latex/base/minimal.cls
+Document Class: minimal 2001/05/25 Standard LaTeX minimal class
+) (/opt/local/share/texmf/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2013/05/22 v0.57 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/opt/local/share/texmf/tex/generic/pstricks/pstricks.tex
+(/opt/local/share/texmf-texlive/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(/opt/local/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/opt/local/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count79
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+
+(/opt/local/share/texmf-texlive/tex/generic/xkeyval/keyval.tex))))
+(/opt/local/share/texmf/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count80
+\pstFP@xia=\count81
+\pstFP@xib=\count82
+\pstFP@xfa=\count83
+\pstFP@xfb=\count84
+\pstFP@rega=\count85
+\pstFP@regb=\count86
+\pstFP@regs=\count87
+\pstFP@times=\count88
+)
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+)
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks19
+))
+(/opt/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+\pgffor@iter=\dimen102
+\pgffor@skip=\dimen103
+\pgffor@stack=\toks20
+\pgffor@toks=\toks21
+)
+\psLoopIndex=\count89
+
+`PSTricks' v2.45  <2013/07/09> (tvz)
+\pst@dima=\dimen104
+\pst@dimb=\dimen105
+\pst@dimc=\dimen106
+\pst@dimd=\dimen107
+\pst@dimg=\dimen108
+\pst@dimh=\dimen109
+\pst@dimm=\dimen110
+\pst@dimn=\dimen111
+\pst@dimo=\dimen112
+\pst@dimp=\dimen113
+\pst@hbox=\box26
+\pst@ibox=\box27
+\pst@boxg=\box28
+\pst@cnta=\count90
+\pst@cntb=\count91
+\pst@cntc=\count92
+\pst@cntd=\count93
+\pst@cntg=\count94
+\pst@cnth=\count95
+\pst@cntm=\count96
+\pst@cntn=\count97
+\pst@cnto=\count98
+\pst@cntp=\count99
+\@zero=\count100
+\pst@toks=\toks22
+(/opt/local/share/texmf/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen114
+\psxunit=\dimen115
+\psyunit=\dimen116
+\pst@C@@rType=\count101
+\pslinewidth=\dimen117
+\psk@startLW=\dimen118
+\psk@endLW=\dimen119
+\pst@customdefs=\toks23
+\pslinearc=\dimen120
+\pst@symbolStep=\dimen121
+\pst@symbolWidth=\dimen122
+\pst@symbolLinewidth=\dimen123
+\everypsbox=\toks24
+\psframesep=\dimen124
+\pslabelsep=\dimen125
+\sh@wgridXunit=\dimen126
+\sh@wgridYunit=\dimen127
+\pst@shift=\dimen128
+)
+File: pstricks.tex 2013/07/09 v2.45 `PSTricks' (tvz,hv)
+
+(/opt/local/share/texmf/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2013/07/09 v2.45 `PST-fp' (hv)
+
+(/opt/local/share/texmf-texlive/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)))
+(/opt/local/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+)
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+\epsfxsize=\dimen131
+\epsfysize=\dimen132
+)
+(/opt/local/share/texmf/tex/latex/pst-grad/pst-grad.sty
+Package: pst-grad 2004/07/15 package wrapper for pst-grad.tex (hv)
+
+(/opt/local/share/texmf/tex/generic/pst-grad/pst-grad.tex
+`pst-grad' v1.06, 2006/11/27 (tvz,dg,hv))
+File: pst-grad.tex 2006/11/27 1.06 `pst-grad' (tvz)
+)
+(/opt/local/share/texmf/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
+(/opt/local/share/texmf-texlive/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+)
+(/opt/local/share/texmf-texlive/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(/opt/local/share/texmf-texlive/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count102
+\multidocount=\count103
+\multido@stuff=\toks25
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
+
+(/opt/local/share/texmf/tex/generic/pst-plot/pst-plot.tex
+ v1.48, 2013/08/10 (tvz,hv)
+\pstRadUnit=\dimen133
+\pstRadUnitInv=\dimen134
+\pst@linecnt=\count104
+\RCD@file=\read1
+\psxlabelsep=\dimen135
+\psylabelsep=\dimen136
+\psk@subticksize=\dimen137
+\pst@xticksizeA=\dimen138
+\pst@xticksizeB=\dimen139
+\pst@xticksizeC=\dimen140
+\pst@yticksizeA=\dimen141
+\pst@yticksizeB=\dimen142
+\pst@yticksizeC=\dimen143
+\@digitcounter=\count105
+\psk@llx=\dimen144
+\psk@lly=\dimen145
+\psk@urx=\dimen146
+\psk@ury=\dimen147
+\pst@xunit=\dimen148
+\pst@yunit=\dimen149
+)
+File: pst-plot.tex 2013/08/10 1.48 `pst-plot' (tvz,hv)
+) (./cartoon.aux)
+\openout1 = `cartoon.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 32.
+ [1] (./cartoon.aux) ) 
+Here is how much of TeX's memory you used:
+ 3800 strings out of 494182
+ 60773 string characters out of 6156702
+ 150236 words of memory out of 5000000
+ 7077 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 470 hyphenation exceptions out of 8191
+ 37i,5n,52p,290b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on cartoon.dvi (1 page, 5944 bytes).

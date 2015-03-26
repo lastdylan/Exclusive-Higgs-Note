@@ -1,0 +1,255 @@
+%\clearpage
+\section{Theory}
+\label{sec:theory}
+
+\par The Feynman diagram shown in Figure~\ref{fig:exclH} describes the production
+of the exclusive double diffractive Higgs boson. In this QCD mechanism two gluons 
+interact through a top quark loop to form the Higgs boson
+ while a third gluon is exchanged to keep the protons color neutral and hence intact.  
+Calculations for this process have been studied extensively. The most popular 
+calculations are performed by the KMR and the CHIDe models, which differ very slightly 
+and predict similar cross sections~\cite{Khoze}\cite{Cudell}. 
+Both models introduce the proton impact factor through the skewed 
+unintegrated gluon density~\cite{Martin}, calculate the probability of additional
+gluon density using the Sudakov form factor~\cite{Dokshitzer1980269}.
+Both models also take into account the probability of soft interaction between the 
+outgoing protons. This interaction tends to destroy the intactness of the
+outgoing protons, and hence destroys the rapidity gaps associated with 
+exclusive processes. There are two main differences between the KMR and the CHIDe models:
+ CHIDe uses different limits to compute the Sudakov factor and also includes
+an additional K-factor to introduce some NLO corrections. 
+As a result, KMR predicts a higher cross section for the exclusive 
+double diffractive Higgs than CHIDe. For a 125\GeV\ Higgs KMR predicts
+3 fb at $\sqrt{s}=8$\TeV~\cite{Khoze}. 
+
+\begin{figure}[!h]
+\centering
+\begin{fmffile}{fgraphs}
+\begin{fmfgraph*}(200,200)
+%bottom and top verticies
+  \fmfleft{P1,P2}
+  \fmfright{P1',H,P2'}
+%incoming protons to gluon vertices
+  \fmf{fermion,tension=2,lab=$P_1$}{P1,g1}
+  \fmf{fermion,tension=2,lab=$P_2$}{P2,g2}
+%blobs at gluon vertices, 0.16w is the size of blob
+\fmfblob{.16w}{g1,g2}
+\fmf{gluon}{g1,v1}
+\fmf{gluon}{g1,g2}
+\fmf{gluon}{v2,g2}
+%quark loop was here
+\fmf{fermion, tension=1, lab.side=left,lab=$t$}{t,v1}
+\fmf{fermion, tension=1.2, lab.side=left,lab=$t$}{v1,v2}
+\fmf{fermion, tension=1,lab.side=left,lab=$t$}{v2,t}
+\fmf{dashes, lab=$H$}{t,H}
+%%gluon from P1 to loop
+%\fmf{gluon}{g1,K1}
+%%gluon from P2 to loop
+%\fmf{gluon}{g2,K2}
+%%quark loop was here
+%\fmf{fermion, lab.side=right,lab=$b$}{K3,H}
+%outgoing protons
+\fmf{fermion}{g1,P1'}
+\fmf{fermion}{g2,P2'}
+%freeze everything in place
+%\fmffreeze
+%\renewcommand{\P}[3]{\fmfi{plain}{%
+%    vpath(__#1,__#2) shifted (thick*(#3))}}
+%%lines on P1
+%\P{P1}{g1}{2,-1}
+%\P{P1}{g1}{-2,1}
+%%lines on p2
+%\P{P2}{g2}{2,1}
+%\P{P2}{g2}{-2,-1}
+%%lines on P1'
+%\P{g1}{P1'}{-2,-1}
+%\P{g1}{P1'}{2,1}
+%%lines on P2'
+%\P{g2}{P2'}{-2,-1}
+%\P{g2}{P2'}{2,1}
+\end{fmfgraph*}
+\end{fmffile}
+\caption{}
+\label{fig:exclH}
+\end{figure}
+
+\par There are two main sources of theoretical systematic uncertainties
+that have to be studied: upper and lower Sudakov form factor scales, unintegrated
+gluon densities. Uncertainties associated with the 
+rapidity gap survival probability were originally studied for the 
+Tevatron and subsequently for the LHC~\cite{Khoze2000wk}. 
+In this analysis we will not use rapidity gaps for event selection so 
+uncertainties from rapidity gaps are estimated to be minimal. 
+
+\subsection{Signal and Background Models}
+\par Both the KMR and CHIDe models are implemented in the Forward Physics Monte Carlo (FPMC).
+For signal we generate exclusive \hwwll\ within KMR using FPMC 
+and shower with Herwig. The results are then run through the full simulation
+of the ATLAS detector. This signal is characterized by very little activity 
+around the dileptons. 
+\par Background processes can be separated into exclusive and inclusive. 
+Inclusive backgrounds are those in which the two protons dissociate and 
+the by-products are detected by the ATLAS detector. All these backgrounds 
+are estimated using several MC samples except the W+jets background, in 
+which the jet is misidentified as a lepton. A 
+tested and verified data-driven method is used to estimate W+jets. See 
+Section VIC from Ref.~\cite{ATLASCONF2014060} for a detailed description 
+of this method. The rest of the backgrounds are listed in Table~\ref{table:background}.
+
+\par The Z/$\gam^*$+jets background is dominated by \zGamtau+jets in 
+which the taus decay leptonically to a different flavor
+channel. If the jets are misidentified as \MET\ the two leptons from the final state 
+would fake the \hwwll\ signature. Of the \zGamtau+jets processes, the 0-jet process
+contributes the most signal contamination because it has the least activity
+around the dilepton system. These processes are generated with Alpgen and showered with Herwig. 
+
+\par \ttbar\ is a background to the Higgs signature when the two top quarks decay to a WW system
+and a pair of b jets. MC@NLO is used to generate this process and Jimmy is used for showering. 
+A single top quark is also a background process because a b jet can be misidentified 
+as a lepton. Powheg is used to generate single top events and the showering is done 
+with Pythia. 
+
+\par Because the signal is produced through gluon exchanges (See  Figure~\ref{fig:exclH}), ggF Higgs
+is a background. ggF Higgs is generated with Powheg and showered with Pythia8. Apart from the intensity 
+of activity about the dilepton system, the kinematics of ggF Higgs is identical to that of 
+the exclusive Higgs.
+
+\par Another irreducible inclusive background is a pair of W bosons. It is refered to as 
+{\it inclusive WW} in this note. The final decay products are identical to signal so 
+kinematic distributions are used to separate this background from signal. This is modelled 
+by Powheg and Pythia.
+
+\par The rest of the inclusive backgrounds will be referred in this note as {\it Other VV}. This is because they
+all constitute a pair of vector bosons. These are $W\gamma$, $W\gamma^*$, $Z\gamma$, $Z\gamma^*$, ZZ, WZ and 
+double-parton interaction (DPI). The MC samples for these processes are listed in Table~\ref{table:background}. 
+     
+\par The main contribution to the exclusive background is the exclusive boson pair. 
+Exclusive lepton pairs have a very small cross section compared to exclusive boson pairs. Regardless, 
+they are also considered in this study. 
+In both cases photons are exchanged, in contrast to gluons exchanged 
+in the exclusive Higgs production.
+Three diagrams contribute to the exclusive boson pairs. Figure~\ref{fig:excWW} shows the three different diagrams.
+In a purely elastic process none of the two protons dissociate during the collision. The intact protons 
+vanish along the beamline and the fiducial region sees only the WW decay products. In a Single Dissociative (SD) process
+one of the protons dissociate, but the remnants of the dissociation 
+vanish along the beamline. A Double Dissociative (DD) process is similar to an inclusive process, but the proton remnants disappear along the beamline.
+The three processes have identical kinematic process, so it is impossible to 
+distinguish them. Only the purely elastic diagram is modeled by the available MC, Herwig++. 
+Data driven methods are used to estimate the SD and DD contributions.    
+
+\begin{figure}[!htb]
+\minipage{0.32\textwidth}
+\begin{fmffile}{fgraphs0D}
+\begin{fmfgraph*}(80,60)
+\fmfleft{i1,i2}
+\fmfright{o1,o2,o3,o4}
+\fmf{fermion}{i1,v1}
+\fmf{fermion}{v1,o1}
+\fmfv{}{o1}
+\fmf{fermion}{i2,v2}
+\fmf{fermion}{v2,o4}
+\fmfv{}{o4}
+\fmf{photon,label=$\gamma$}{v1,v3}
+\fmf{photon}{v3,o3}
+\fmfv{label=$W^+$}{o3}
+\fmf{photon,label=$\gamma$}{v2,v3}
+\fmf{photon}{v3,o2}
+\fmfv{label=$W^-$}{o2}
+\fmfdot{v3}
+\end{fmfgraph*}
+\end{fmffile}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+\begin{fmffile}{fgraphsSD}
+\begin{fmfgraph*}(80,60)
+\fmfleft{i1,i2}
+\fmfright{o1,o2,o3,o4,o5,o6}
+\fmf{fermion}{i1,v1}
+\fmf{fermion}{v1,o1}
+\fmfv{}{o1}
+\fmf{fermion}{i2,v2}
+\fmfforce{.5w,.8h}{v2}
+\fmf{dashes_arrow}{v2,o4}
+\fmfv{}{o4}
+\fmf{photon,label=$\gamma$}{v1,v3}
+\fmf{photon}{v3,o3}
+\fmfv{label=$W^+$}{o3}
+\fmfforce{w,0.65h}{o3}
+\fmf{photon,label=$\gamma$}{v2,v3}
+\fmf{photon}{v3,o2}
+\fmfv{label=$W^-$}{o2}
+\fmfforce{w,0.35h}{o2}
+\fmf{dashes_arrow}{v2,o6}
+\fmf{dashes_arrow}{v2,o5}
+\fmfforce{w,h}{o6}
+\fmfforce{w,0.9h}{o5}
+\fmfforce{w,0.8h}{o4}
+\fmfdot{v3}
+\end{fmfgraph*}
+\end{fmffile}
+\endminipage\hfill
+\minipage{0.32\textwidth}%
+\begin{fmffile}{fgraphsDD}
+\begin{fmfgraph*}(80,60)
+\fmfleft{i1,i2}
+\fmfright{o1,o2,o3,o4,o5,o6,o7,o8}
+\fmf{fermion}{i1,v1}
+\fmf{dashes_arrow}{v1,o1}
+\fmf{dashes_arrow}{v1,o2}
+\fmf{dashes_arrow}{v1,o3}
+\fmfforce{.5w,0.15h}{v1}
+\fmfforce{w,0}{o1}
+\fmfforce{w,0.05h}{o1}
+\fmfforce{w,0.1h}{o2}
+\fmfforce{w,0.15h}{o3}
+\fmf{photon,label=$\gamma$}{v1,v3}
+\fmf{photon}{v3,o5}
+\fmfv{label=$W^+$}{o5}
+\fmfforce{w,0.7h}{o5}
+\fmf{fermion}{i2,v2}
+\fmfforce{.5w,0.85h}{v2}
+\fmf{photon,label=$\gamma$}{v2,v3}
+\fmf{photon}{v3,o4}
+\fmfv{label=$W^-$}{o4}
+\fmfforce{w,0.3h}{o4}
+\fmf{dashes_arrow}{v2,o8}
+\fmf{dashes_arrow}{v2,o7}
+\fmf{dashes_arrow}{v2,o6}
+\fmfforce{w,h}{o8}
+\fmfforce{w,0.95h}{o7}
+\fmfforce{w,0.9h}{o6}
+\fmfdot{v3}
+\end{fmfgraph*}
+\end{fmffile}
+\endminipage
+\caption{Diagrams that contribute to the exclusive WW processes. [Left] 
+A purely elastice process. No proton dissociates and the two protons vanish along the beamline. [Middle]
+A single dissociative (SD) process. One proton dissociates but vanishes along the beamline. [Right]
+A double dissociative (DD) process. Both protons dissociate but the remnants vanish along the beamline.
+Rapidity gaps are present in all three diagrams and the kinematic distributions are identical, so
+they are indistinguishable.}
+\label{fig:exclWW}
+\end{figure}
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{l|l}
+Inclusive Background & Exclusive Background \\
+\hline
+Drell Yan Z/$\gamma^*$+jets (Alpgen+Herwig) & 															  WW (Herwig++) \\
+W$\gamma$ +jets (Alpgen+Jimmy) & $l^{+}l^{-}$ (Herwig++)\\
+WZ, WW, ZZ, ggF Higgs (Powheg+Pythia8) 														& \\
+\ttbar\ (MC@NLO+Jimmy) & \\
+single top (AcerMC+Pythia) & \\
+Z$\gamma$ +jets (Sherpa) & \\
+\end{tabular}
+\caption{Background samples used.}
+\label{table:background}
+\end{center}
+\end{table}
+
+\subsection{Data Samples}
+All the data used is from the ATLAS 2012 8~\TeV\ run and sums up to 
+a total integrated luminosity of 20.3~\ifb. The D3PDs used are the most up-to-date and are 
+identified with the tag p1328/p1329. The integrated luminosity is obtained 
+through an ATLAS luminosity calculator~\cite{lumi}. 

@@ -1,0 +1,252 @@
+%Figure~\ref{fig:trackClose} shows this d\z0\ for the $e\mu$ and $\mu e$ decay channels
+%for both the signal and for all the backgrounds introduced in the preceding sections.
+%The signal is scaled to the background integral for it to be visible. 
+%Both signal and background peak at zero but the tails differ significantly.
+%The strategy used to select exclusivity exploits the difference in these tails. 
+%This strategy achieves an efficiency of 50\% for a 1 mm window around 
+%the average lepton \z0\ position.
+%
+%
+%To demonstrate the effects of pileup events on this exclusivity cut
+%the efficiencies were investigated for events with different number of 
+%reconstructed vertices. Figure~\ref{fig:effPileup} shows how these efficiencies
+%depend on the number of reconstructed vertices in the $e\mu$ (left) and $\mu e$ (right)
+%channels. Tighter exclusivity cuts are also shown in these plots (2 mm, 3 mm and 4 mm). 
+%A steady decline in efficiency with pileup is noted from these distributions, regardless 
+%of the tightness of the cut. Efforts to optimize the exclusivity cuts and reduce this drop 
+%in efficiency with respect to pileup are on-going. 
+%  
+%\begin{figure}[!h]
+%\centering
+%\begin{tabular}{c}
+%	\includegraphics[width=0.5\linewidth]{h_nVxp_sig.eps}
+%	\includegraphics[width=0.5\linewidth]{h_nVxp_sigmue.eps}
+%\end{tabular}
+%\caption{Efficiency versus number of reconstructed vertices in an event. This is a measure
+%of exclusivity cut dependence on pileup. Efficiencies drop with pileup regardless of the exclusivity cut 
+%tightness. }
+%\label{fig:effPileup}
+%\end{figure}
+%
+%\subsection{Signal Region}
+%With exclusivity cuts defined, we can now define our signal region. We 
+%adopt definitions used by the HSG3 group to isolate \HWWll\ events. In addition
+%to the event selection discussed in Section~\ref{sec:selection}, we require 
+%that the dilepton invariant mass lie within 10 GeV and 50 GeV to avoid
+%Drell-Yan and also take advantage of the Higgs spin zero. To further isolate
+%Higgs events we require a $\Delta\phi$ cut of less than 1.8 for the 
+%two leptons. To isolate exclusive events we require the closest unmatched 
+%track to be not less than 1 mm of the average dilepton \z0. Table~\ref{table:sr} 
+%summarizes this.
+%
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{c}
+%Cuts \\
+%\hline
+%Exactly 2 OS leptons (different flavor) \\
+%\pt\ 25 GeV, 15 GeV \\
+%$10\ GeV <m_{ll}<50\ GeV$ \\
+%$\dfll<1.8$ \\
+%$\Delta z_{tr}<1\ mm$ \\
+%Closest track $>$ 1 mm \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Selection cuts that define signal regions. This study only considers different flavor 
+%lepton channels to minimize Drell-Yan background.}
+%\label{table:sr}
+%\end{table}
+%
+%
+%\subsection{Validation Regions}
+%To test the performance of exclusivity cuts on data we use \Zee\ and \Zmm\ 
+%events and compare them to \Zee\ and \Zmm\ Monte Carlo with all jet multiplicities. 
+%The selection criteria for these
+%regions is similar to the signal region apart from the \mll\ and 
+%\dfll. We select a 10 GeV region about the Z-pole and isolate the non-Higgs events by
+%demanding $\dfll>1.8$. Table~\ref{table:cr} summarizes this.
+%  
+%\begin{table}[!h]
+%\begin{center}
+%\begin{tabular}{c}
+%Cuts \\
+%\hline
+%Exactly 2 OS leptons (same flavor) \\
+%\pt\ 25 GeV, 15 GeV \\
+%$81\ GeV <m_{ll}<101\ GeV$ \\
+%$\dfll>1.8$ \\
+%$\Delta z_{tr}<1\ mm$ \\
+%Closest track $>$ 1 mm \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Validation regions in data are \Zee\ and \Zmm\ events.}
+%\label{table:cr}
+%\end{table}
+%
+%\subsection{Exclusivity in Data}
+%\par Table~\ref{table:zee}  and Table~\ref{table:zmm} show a 
+%cutflow of selecting \Zee\ and \Zmm\ events respectively
+% from data with the selection criteria described above.
+%The results are compared to \Zee\ (\Zmm) Alpgen+Pythia events of all
+%jet multiplicities and all the backgrounds listed in Table~\ref{table:background}. Exclusive and 
+%inclusive backgrounds are separated and also summed together. Cumulative and relative 
+%efficiencies as well as a ratio of the cumulative efficiencies 
+%in data over MC of each cut are listed as well in the table. 
+%The consensus from both of these control regions is that the 
+%exclusivity cut performs better in data than it does in
+%in MC. The reason for this descrepancy is that soft QCD is not 
+%very well modelled in Monte Carlo.
+%Distributions that are relevant to cutflows in Tables~\ref{table:zee} and~\ref{table:zmm}
+%are shown in Figures~\ref{fig:zee} and~\ref{fig:zmm}. Each variable is plotted
+%right before it is cut on. Red arrows show where the cuts lie. This is to demonstrate
+%that the events in the validation regions are well modelled in Monte Carlo, apart from 
+%exclusivity.
+%
+%\begin{table}[!h]
+%\begin{center}
+%        \resizebox{\textwidth}{!}{
+%\begin{tabular}{c|cc|ccc|ccc|c}
+% Cut &  Inc MC & Exc MC & Total &  $\epsilon_{cum}$ &      $\epsilon_{rel}$        &   Data &  $\epsilon_{cum}$ &      $\epsilon_{rel}$ &  $\epsilon_{cum}^{data}/\epsilon_{cum}^{mc}$\\
+%\hline
+%Exactly 2 $e$         &  $( 7.655\pm0.006)\times 10^{6}$& $( 1.185\pm0.006)\times 10^{3}$& $( 7.656\pm0.006)\times 10^{6}$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$& $\num{8 829 057}\pm2 971$ & $( 1.0\pm0.0)$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$\\
+%Isolated $e$          &  $( 7.333\pm0.005)\times 10^{6}$& $( 1.174\pm0.006)\times 10^{3}$& $( 7.334\pm0.005)\times 10^{6}$& $( 9.579\pm0.002)\times 10^{-1}$& $( 9.579\pm0.002)\times 10^{-1}$& $\num{8 044 009}\pm2 836$ & $( 9.111\pm0.0010)\times 10^{-1}$& $( 9.111\pm0.0010)\times 10^{-1}$& $( 9.511\pm0.0018)\times 10^{-1}$\\
+%OS                      &  $( 7.135\pm0.005)\times 10^{6}$& $( 1.151\pm0.006)\times 10^{3}$& $( 7.137\pm0.005)\times 10^{6}$& $( 9.321\pm0.002)\times 10^{-1}$& $( 9.730\pm0.0014)\times 10^{-1}$& $\num{7 844 453}\pm2 801$ & $( 8.885\pm0.0011)\times 10^{-1}$& $( 9.752\pm0.0005)\times 10^{-1}$& $( 9.532\pm0.002)\times 10^{-1}$\\
+%$e$ $p_T,\ 25,\ 15\ GeV$      &  $( 6.898\pm0.005)\times 10^{6}$& $( 1.120\pm0.006)\times 10^{3}$& $( 6.899\pm0.005)\times 10^{6}$& $( 9.011\pm0.003)\times 10^{-1}$& $( 9.667\pm0.003)\times 10^{-1}$& $\num{7 531 640}\pm2 744$ & $( 8.531\pm0.0012)\times 10^{-1}$& $( 9.601\pm0.0007)\times 10^{-1}$& $( 9.467\pm0.003)\times 10^{-1}$\\
+%$81<mll<101\ GeV$       &  $( 5.915\pm0.004)\times 10^{6}$& $( 2.025\pm0.023)\times 10^{2}$& $( 5.915\pm0.004)\times 10^{6}$& $( 7.726\pm0.004)\times 10^{-1}$& $( 8.574\pm0.004)\times 10^{-1}$& $\num{6 355 110}\pm2 521$ & $( 7.198\pm0.0015)\times 10^{-1}$& $( 8.438\pm0.0013)\times 10^{-1}$& $( 9.317\pm0.005)\times 10^{-1}$\\
+%$\Delta\phi_{ll}>1.8$   &  $( 5.638\pm0.004)\times 10^{6}$& $( 2.010\pm0.023)\times 10^{2}$& $( 5.639\pm0.004)\times 10^{6}$& $( 7.365\pm0.004)\times 10^{-1}$& $( 9.532\pm0.0007)\times 10^{-1}$& $\num{6 076 422}\pm2 465$ & $( 6.882\pm0.0016)\times 10^{-1}$& $( 9.561\pm0.0008)\times 10^{-1}$& $( 9.345\pm0.005)\times 10^{-1}$\\
+%$\Delta_{tr}z<1\ mm$    &  $( 5.605\pm0.004)\times 10^{6}$& $( 2.001\pm0.023)\times 10^{2}$& $( 5.606\pm0.004)\times 10^{6}$& $( 7.321\pm0.004)\times 10^{-1}$& $( 9.941\pm0.0005)\times 10^{-1}$& $\num{6 034 266}\pm2 456$ & $( 6.835\pm0.0016)\times 10^{-1}$& $( 9.931\pm0.0003)\times 10^{-1}$& $( 9.335\pm0.005)\times 10^{-1}$\\
+%Closest Track$>$1\ mm   &  $( 8.775\pm0.17)\times 10^{3}$& $( 1.097\pm0.017)\times 10^{2}$& $( 8.885\pm0.17)\times 10^{3}$& $( 1.160\pm0.022)\times 10^{-3}$& $( 1.585\pm0.030)\times 10^{-3}$& $\num{6 675}\pm82$ & $( 7.560\pm0.093)\times 10^{-4}$& $( 1.106\pm0.014)\times 10^{-3}$& $( 6.515\pm0.12)\times 10^{-1}$\\
+%\end{tabular}
+%}
+%\end{center}
+%\caption{\Zee\ Validation Region. Only the 1 mm cut is shown here. The exclusivity cut performs better in data
+%than in Monte Carlo because the MC samples do not correctly model soft QCD. Eventually it is necessary to 
+%quantify this systematic deviation from data in MC. }
+%\label{table:zee}
+%\end{table}
+%
+%\begin{figure}[!h]
+%\centering
+%\begin{tabular}{c}
+%	\includegraphics[width=0.5\linewidth]{h_mll_ee.eps}
+%	\includegraphics[width=0.5\linewidth]{h_dphill_ee.eps} \\ 
+%	\includegraphics[width=0.5\linewidth]{h_dilepdz0_ee.eps}
+%	\includegraphics[width=0.5\linewidth]{h_track_ee.eps} 
+%\end{tabular}
+%\caption{Variables relevant in defining the \Zee\ validation region. Data agrees with MC except 
+%for variables that are derived from tracks. MC does not correctly model soft tracks. }
+%\label{fig:zee}
+%\end{figure}
+%
+%\begin{table}[!h]
+%\begin{center}
+%        \resizebox{\textwidth}{!}{
+%\begin{tabular}{c|cc|ccc|ccc|c}
+% Cut &  Inc MC & Exc MC & Total &  $\epsilon_{cum}$ &      $\epsilon_{rel}$        &   Data &  $\epsilon_{cum}$ &      $\epsilon_{rel}$ &  \\
+%\hline
+%Exactly 2 $\mu$         &  $( 1.019\pm0.0007)\times 10^{7}$& $( 1.784\pm0.008)\times 10^{3}$& $( 1.020\pm0.0007)\times 10^{7}$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$& $\num{10 107 641}\pm3 179$ & $( 1.0\pm0.0)$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$\\
+%Isolated $\mu$          &  $( 9.927\pm0.006)\times 10^{6}$& $( 1.779\pm0.008)\times 10^{3}$& $( 9.929\pm0.006)\times 10^{6}$& $( 9.738\pm0.0013)\times 10^{-1}$& $( 9.738\pm0.0013)\times 10^{-1}$& $\num{9 249 157}\pm3 041$ & $( 9.151\pm0.0009)\times 10^{-1}$& $( 9.151\pm0.0009)\times 10^{-1}$& $( 9.397\pm0.0010)\times 10^{-1}$\\
+%OS                      &  $( 9.921\pm0.006)\times 10^{6}$& $( 1.779\pm0.008)\times 10^{3}$& $( 9.923\pm0.006)\times 10^{6}$& $( 9.732\pm0.0014)\times 10^{-1}$& $( 9.994\pm0.0006)\times 10^{-1}$& $\num{9 227 928}\pm3 038$ & $( 9.130\pm0.0009)\times 10^{-1}$& $( 9.977\pm0.00016)\times 10^{-1}$& $( 9.381\pm0.0011)\times 10^{-1}$\\
+%$\mu$ $p_T,\ 25,\ 15\ GeV$      &  $( 9.371\pm0.006)\times 10^{6}$& $( 1.492\pm0.007)\times 10^{3}$& $( 9.373\pm0.006)\times 10^{6}$& $( 9.192\pm0.003)\times 10^{-1}$& $( 9.446\pm0.003)\times 10^{-1}$& $\num{8 616 915}\pm2 935$ & $( 8.525\pm0.0011)\times 10^{-1}$& $( 9.338\pm0.0008)\times 10^{-1}$& $( 9.274\pm0.003)\times 10^{-1}$\\
+%$81<mll<101\ GeV$       &  $( 7.969\pm0.005)\times 10^{6}$& $( 2.631\pm0.026)\times 10^{2}$& $( 7.969\pm0.005)\times 10^{6}$& $( 7.815\pm0.004)\times 10^{-1}$& $( 8.502\pm0.003)\times 10^{-1}$& $\num{7 257 805}\pm2 694$ & $( 7.181\pm0.0014)\times 10^{-1}$& $( 8.423\pm0.0012)\times 10^{-1}$& $( 9.188\pm0.004)\times 10^{-1}$\\
+%$\Delta\phi_{ll}>1.8$   &  $( 7.608\pm0.005)\times 10^{6}$& $( 2.611\pm0.026)\times 10^{2}$& $( 7.608\pm0.005)\times 10^{6}$& $( 7.461\pm0.004)\times 10^{-1}$& $( 9.547\pm0.0006)\times 10^{-1}$& $\num{6 951 856}\pm2 637$ & $( 6.878\pm0.0015)\times 10^{-1}$& $( 9.578\pm0.0007)\times 10^{-1}$& $( 9.218\pm0.004)\times 10^{-1}$\\
+%$\Delta_{tr}z<1\ mm$    &  $( 7.595\pm0.005)\times 10^{6}$& $( 2.607\pm0.026)\times 10^{2}$& $( 7.595\pm0.005)\times 10^{6}$& $( 7.449\pm0.004)\times 10^{-1}$& $( 9.983\pm0.0002)\times 10^{-1}$& $\num{6 935 634}\pm2 634$ & $( 6.862\pm0.0015)\times 10^{-1}$& $( 9.977\pm0.00018)\times 10^{-1}$& $( 9.212\pm0.004)\times 10^{-1}$\\
+%Closest Track$>$1\ mm   &  $( 1.342\pm0.022)\times 10^{4}$& $( 1.536\pm0.020)\times 10^{2}$& $( 1.357\pm0.022)\times 10^{4}$& $( 1.331\pm0.021)\times 10^{-3}$& $( 1.787\pm0.028)\times 10^{-3}$& $\num{8 565}\pm93$ & $( 8.474\pm0.092)\times 10^{-4}$& $( 1.235\pm0.013)\times 10^{-3}$& $( 6.366\pm0.094)\times 10^{-1}$\\
+%\end{tabular}
+%}
+%\end{center}
+%\caption{\Zmm\ Validation Region. Exclusivity cut performs better in data than in MC.}
+%\label{table:zmm}
+%\end{table}
+%
+%\begin{figure}[!h]
+%\centering
+%\begin{tabular}{c}
+%	\includegraphics[width=0.5\linewidth]{h_mll.eps}
+%	\includegraphics[width=0.5\linewidth]{h_dphill.eps} \\ 
+%	\includegraphics[width=0.5\linewidth]{h_dilepdz0.eps}
+%	\includegraphics[width=0.5\linewidth]{h_track.eps} 
+%\end{tabular}
+%\caption{Variables relevant to defining the \Zmm\ validation region. Variables that are derivatives of 
+%tracking show disagreements between data and MC.}
+%\label{fig:zmm}
+%\end{figure}
+%
+%\subsection{Exclusivity in MC Signal Region}
+%\par For both the $e\mu$ and $\mu e$ signal regions we notice that 
+%at exclusivity level we run out of statistics for the inclusive 
+% Z+jets and W+jets background samples. To estimate the number of these background
+%events expected in these signal regions we scale the number of events 
+%that pass the $\dfll<1.8$ cut with the data exclusivity cut 
+%relative efficiency. More precisely, we use the average of the efficiencies 
+%in $ee$ and $\mumu$ data control regions. This of course assumes that the number of 
+%exclusive Z bosons is negligible~\cite{Aaltonen} 
+%in comparison to inclusive Z bosons that pass the exclusivity cut.
+%Table~\ref{table:emu_sig} and Table~\ref{table:mue_sig} show cutflows 
+%for the $e\mu$ and $\mu e$ decay channels respectively. The structure is 
+%similar to cutflows in the validation regions, with slightly different cuts 
+%that make the signal region orthogonal to any of the validation regions.
+%
+%\begin{table}[!h]
+%\begin{center}
+%        \resizebox{\linewidth}{!}{
+%\begin{tabular}{c|cc|ccc|ccc}
+%   Cut & Inclusive BG & Exclusive BG &Total BG &$\epsilon_{cum}$ & $\epsilon_{rel}$ & SG  &  $\epsilon_{cum}$ & $\epsilon_{rel}$ \\
+%\hline
+%Exactly 2 Leptons $e,\ \mu$         &  $( 1.375\pm0.013)\times 10^{5}$& $( 5.437\pm0.034)\times 10^{1}$& $( 1.376\pm0.013)\times 10^{5}$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$& $(5.275\pm0.041)\times 10^{-2}$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$\\
+%Isolated $e,\ \mu$          &  $( 8.918\pm0.090)\times 10^{4}$& $( 5.367\pm0.034)\times 10^{1}$& $( 8.923\pm0.090)\times 10^{4}$& $( 6.486\pm0.051)\times 10^{-1}$& $( 6.486\pm0.051)\times 10^{-1}$& $(5.147\pm0.040)\times 10^{-2}$& $( 9.756\pm0.012)\times 10^{-1}$& $( 9.756\pm0.012)\times 10^{-1}$\\
+%OS                      &  $( 7.714\pm0.057)\times 10^{4}$& $( 5.297\pm0.033)\times 10^{1}$& $( 7.719\pm0.057)\times 10^{4}$& $( 5.611\pm0.052)\times 10^{-1}$& $( 8.651\pm0.068)\times 10^{-1}$& $(5.119\pm0.040)\times 10^{-2}$& $( 9.703\pm0.013)\times 10^{-1}$& $( 9.945\pm0.006)\times 10^{-1}$\\
+%$e,\ \mu$ $p_T,\ 25,\ 15\ GeV$      &  $( 5.569\pm0.032)\times 10^{4}$& $( 4.617\pm0.030)\times 10^{1}$& $( 5.573\pm0.032)\times 10^{4}$& $( 4.051\pm0.040)\times 10^{-1}$& $( 7.220\pm0.045)\times 10^{-1}$& $(3.502\pm0.033)\times 10^{-2}$& $( 6.639\pm0.036)\times 10^{-1}$& $( 6.842\pm0.036)\times 10^{-1}$\\
+%$10<mll<50\ GeV$        &  $( 1.258\pm0.015)\times 10^{4}$& $( 6.1\pm0.11)$& $( 1.258\pm0.015)\times 10^{4}$& $( 9.145\pm0.13)\times 10^{-2}$& $( 2.258\pm0.024)\times 10^{-1}$& $(2.462\pm0.028)\times 10^{-2}$& $( 4.666\pm0.038)\times 10^{-1}$& $( 7.029\pm0.043)\times 10^{-1}$\\
+%$\Delta\phi_{ll}<1.8$   &  $( 6.417\pm0.13)\times 10^{3}$& $( 5.2\pm0.09)$& $( 6.422\pm0.13)\times 10^{3}$& $( 4.668\pm0.100)\times 10^{-2}$& $( 5.104\pm0.060)\times 10^{-1}$& $(2.179\pm0.026)\times 10^{-2}$& $( 4.131\pm0.038)\times 10^{-1}$& $( 8.854\pm0.036)\times 10^{-1}$\\
+%$\Delta_{tr}z<1\ mm$    &  $( 6.251\pm0.11)\times 10^{3}$& $( 5.2\pm0.09)$& $( 6.256\pm0.11)\times 10^{3}$& $( 4.547\pm0.090)\times 10^{-2}$& $( 9.741\pm0.092)\times 10^{-1}$& $(2.174\pm0.026)\times 10^{-2}$& $( 4.122\pm0.038)\times 10^{-1}$& $( 9.976\pm0.006)\times 10^{-1}$\\
+%Closest Track$>$1\ mm   & $( 2.6\pm0.15)$& $( 2.8\pm0.07)$& $( 5.4\pm0.17)$& $( 3.922\pm0.13)\times 10^{-5}$& $( 8.626\pm0.311)\times 10^{-4}$& $(1.207\pm0.019)\times 10^{-2}$& $( 2.288\pm0.032)\times 10^{-1}$& $( 5.550\pm0.060)\times 10^{-1}$\\
+%\end{tabular}
+%}
+%\end{center}
+%\caption{$e\mu$ signal region. We run out of statistics for Z+jets and W+jets events after the 
+%exclusivity cut, so we estimate them in the signal region by using exclusivity cut efficiencies 
+%from data. }
+%\label{table:emu_sig}
+%\end{table}
+%
+%\begin{table}[!h]
+%\begin{center}
+%        \resizebox{\linewidth}{!}{
+%\begin{tabular}{c|cc|ccc|ccc}
+%   Cut & Inclusive BG & Exclusive BG &Total BG &$\epsilon_{cum}$ & $\epsilon_{rel}$ & SG  &  $\epsilon_{cum}$ & $\epsilon_{rel}$ \\
+%\hline
+%Exactly 2 leptons $\mu,\ e$      	&  $( 1.850\pm0.021)\times 10^{5}$& $( 4.846\pm0.034)\times 10^{1}$& $( 1.850\pm0.021)\times 10^{5}$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$& $(4.557\pm0.039)\times 10^{-2}$& $( 1.0\pm0.0)$& $( 1.0\pm0.0)$\\
+%Isolated $\mu,\ e$       	&  $( 1.245\pm0.016)\times 10^{5}$& $( 4.764\pm0.033)\times 10^{1}$& $( 1.245\pm0.016)\times 10^{5}$& $( 6.731\pm0.056)\times 10^{-1}$& $( 6.731\pm0.056)\times 10^{-1}$& $(4.443\pm0.039)\times 10^{-2}$& $( 9.751\pm0.013)\times 10^{-1}$& $( 9.751\pm0.013)\times 10^{-1}$\\
+%OS                   	&  $( 8.234\pm0.095)\times 10^{4}$& $( 4.691\pm0.033)\times 10^{1}$& $( 8.239\pm0.095)\times 10^{4}$& $( 4.453\pm0.052)\times 10^{-1}$& $( 6.615\pm0.071)\times 10^{-1}$& $(4.415\pm0.038)\times 10^{-2}$& $( 9.689\pm0.015)\times 10^{-1}$& $( 9.936\pm0.007)\times 10^{-1}$\\
+%$\mu,\ e$ $p_T,\ 25,\ 15\ GeV$  	&  $( 5.294\pm0.055)\times 10^{4}$& $( 4.026\pm0.029)\times 10^{1}$& $( 5.298\pm0.055)\times 10^{4}$& $( 2.863\pm0.037)\times 10^{-1}$& $( 6.430\pm0.065)\times 10^{-1}$& $(2.869\pm0.031)\times 10^{-2}$& $( 6.296\pm0.041)\times 10^{-1}$& $( 6.498\pm0.042)\times 10^{-1}$\\
+%$10<mll<50\ GeV$     	&  $( 1.244\pm0.030)\times 10^{4}$& $( 5.3\pm0.11)$& $( 1.244\pm0.030)\times 10^{4}$& $( 6.725\pm0.17)\times 10^{-2}$& $( 2.349\pm0.048)\times 10^{-1}$& $(2.017\pm0.026)\times 10^{-2}$& $( 4.426\pm0.043)\times 10^{-1}$& $( 7.030\pm0.049)\times 10^{-1}$\\
+%$\Delta\phi_{ll}<1.8$ 	&  $( 6.511\pm0.281)\times 10^{3}$& $( 4.5\pm0.09)$& $( 6.516\pm0.281)\times 10^{3}$& $( 3.522\pm0.15)\times 10^{-2}$& $( 5.237\pm0.12)\times 10^{-1}$& $(1.780\pm0.024)\times 10^{-2}$& $( 3.906\pm0.042)\times 10^{-1}$& $( 8.825\pm0.042)\times 10^{-1}$\\
+%$\Delta_{tr}z<1\ mm$ 	&  $( 5.540\pm0.219)\times 10^{3}$& $( 4.5\pm0.09)$& $( 5.545\pm0.219)\times 10^{3}$& $( 2.997\pm0.12)\times 10^{-2}$& $( 8.510\pm0.234)\times 10^{-1}$& $(1.774\pm0.024)\times 10^{-2}$& $( 3.894\pm0.042)\times 10^{-1}$& $( 9.970\pm0.007)\times 10^{-1}$\\
+%Closest Track$>$1\ mm 	&  $( 2.9\pm0.3)$& $( 2.5\pm0.06)$& $( 5.3\pm0.3)$& $( 2.890\pm0.16)\times 10^{-5}$& $( 9.642\pm0.648)\times 10^{-4}$& $(9.592\pm0.18)\times 10^{-3}$& $( 2.105\pm0.034)\times 10^{-1}$& $( 5.406\pm0.069)\times 10^{-1}$\\
+%
+%\end{tabular}
+%}
+%\end{center}
+%\caption{$\mu e$ signal region. We run out of statistics for Z+jets and W+jets events after the 
+%exclusivity cut, so we estimate them in the signal region by using exclusivity cut efficiencies 
+%from data. }
+%\label{table:mue_sig}
+%\end{table}
+%
+%Figure~\ref{fig:soverb} shows $S/\sqrt{B}$ in the signal regions for tightening exclusivity cuts.
+%Tightening the cut does not improve $S/\sqrt{B}$. This is the reason why in these studies we 
+%concentrated mainly on the 1 mm cut as it best discriminates against backgrounds. 
+%
+%\begin{figure}[!h]
+%\centering
+%\begin{tabular}{c}
+%	\includegraphics[width=0.5\linewidth]{h_soverb_mue.eps}
+%\end{tabular}
+%\caption{$S/\sqrt{B}$ for 1 mm up to 4 mm cuts. Tightening the exclusivity cut does not give 
+%a better yield. }
+%\label{fig:soverb}
+%\end{figure}
+%

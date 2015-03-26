@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{atlasnote}
+\graphicspath{{figures/}}
+\usepackage{atlasphysics}
+\usepackage{subfigure}
+\usepackage{mathrsfs}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{feynmp}
+\usepackage[]{pstricks}
+\usepackage{ifpdf}
+\ifpdf
+\DeclareGraphicsRule{*}{mps}{*}{}
+\else
+\DeclareGraphicsRule{*}{eps}{*}{}
+\fi 
+
+\makeatletter
+    \def\endfmffile{%
+      \fmfcmd{\p@rcent\space the end.^^J%
+      end.^^J%
+      endinput;}%
+      \if@fmfio
+        \immediate\closeout\@outfmf
+      \fi
+      \ifnum\pdfshellescape=\@ne
+        \immediate\write18{mpost \thefmffile}%
+      \fi}
+    \makeatother
+
+
+
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.98}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{0.97}
+
+\usepackage{authblk}
+\renewcommand\Authands{, } % avoid ``. and'' for last author
+\renewcommand\Affilfont{\itshape\small} % affiliation formatting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\title{Cross-section measurement of W boson produced in association with jets}
+\title{Searches for the exclusive double diffractive Higgs}
+%\author{The ATLAS Collaboration}
+
+
+\author[a]{L.~Feremenga} %
+\author[b]{L.~Nodulman} %
+\author[c]{C.~C.~Chau} %
+\author[b]{S.~Chekanov} %
+\author[a]{J.~Griffith}%
+\author[a]{B.~Blair}%
+
+\affil[a]{University of Texas at Arlington}
+\affil[b]{Argonne National Laboratory}
+\affil[c]{University of Toronto}
+
+
+
+\begin{document}
+
+\end{document}

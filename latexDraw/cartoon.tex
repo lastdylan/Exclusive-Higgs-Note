@@ -1,0 +1,33 @@
+\documentclass{minimal}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+% User Packages:
+% 
+% 
+\begin{document}
+\psscalebox{1.0 1.0} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.5712988)(13.62,3.5712988)
+\psline[linecolor=black, linewidth=0.07, doubleline=true, doublesep=0.04, doublecolor=blue, arrowsize=0.05291666666666667cm 2.0,arrowlength=1.4,arrowinset=0.0]{->}(1.6,-1.0953614)(9.2,-1.0953614)
+\psline[linecolor=black, linewidth=0.07, arrowsize=0.05291666666666667cm 2.0,arrowlength=1.4,arrowinset=0.0]{->}(3.2,-1.0953614)(2.4,1.7046387)
+\psline[linecolor=black, linewidth=0.07, arrowsize=0.05291666666666667cm 2.0,arrowlength=1.4,arrowinset=0.0]{->}(4.8,-1.0953614)(5.2,1.7046387)
+\psline[linecolor=black, linewidth=0.07, linestyle=dashed, dash=0.17638889cm 0.10583334cm, arrowsize=0.05291666666666667cm 2.0,arrowlength=1.4,arrowinset=0.0]{->}(6.4,-1.0953614)(6.4,3.3046386)
+\psdots[linecolor=black, dotstyle=|, dotsize=0.26](4.0,-1.0953614)
+\psline[linecolor=black, linewidth=0.07, dotsize=0.07055555555555555cm 2.6]{o-o}(4.0,-2.0953612)(6.4,-2.0953612)
+\rput[bl](0.4,-1.0953614){Beam}
+\rput[bl](1.6,1.7046387){Lepton 1}
+\rput[bl](4.4,2.1046386){Lepton 2}
+\rput[bl](5.6,3.4046386){Extra Track}
+\rput[bl](3.6,-1.8953613){$z_{av}$}
+\rput[bl](6.0,-1.8953613){$z_{tr}$}
+\rput[bl](4.8,-2.4953613){$\Delta z_{1}$}
+\rput[bl](2.4,-0.6953613){$z_{1}$}
+\rput[bl](5.1,-0.6953613){$z_{2}$}
+\rput[bl](0.0,3.3046386){$z_{av}=(z_{1}+z_{2})/2$}
+\rput[bl](8.0,-2.2953613){$\Delta z_{1} = |z_{tr} - z_{av}|$}
+\rput[bl](9.2,-1.0953614){Beam}
+\end{pspicture}
+}
+\end{document}

@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper]{atlasnote}
+\graphicspath{{figures/}}
+\usepackage{atlasphysics}
+\usepackage{geometry,color,graphicx}
+\usepackage{subfigure}
+\usepackage{mathrsfs}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{feynmp}
+\usepackage{ifpdf}
+\ifpdf
+\DeclareGraphicsRule{*}{mps}{*}{}
+\else
+\DeclareGraphicsRule{*}{eps}{*}{}
+\fi 
+
+\makeatletter
+    \def\endfmffile{%
+      \fmfcmd{\p@rcent\space the end.^^J%
+      end.^^J%
+      endinput;}%
+      \if@fmfio
+        \immediate\closeout\@outfmf
+      \fi
+      \ifnum\pdfshellescape=\@ne
+        \immediate\write18{mpost \thefmffile}%
+      \fi}
+    \makeatother
+
+
+
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.98}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{0.97}
+
+\usepackage{authblk}
+\renewcommand\Authands{, } % avoid ``. and'' for last author
+\renewcommand\Affilfont{\itshape\small} % affiliation formatting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\title{Cross-section measurement of W boson produced in association with jets}
+\title{Searches for the exclusive double diffractive Higgs}
+%\author{The ATLAS Collaboration}
+
+
+\author[a]{L.~Feremenga} %
+\author[b]{L.~Nodulman} %
+\author[c]{C.~C.~Chau} %
+\author[b]{S.~Chekanov} %
+\author[a]{J.~Griffith}%
+\author[a]{B.~Blair}%
+
+\affil[a]{University of Texas at Arlington}
+\affil[b]{Argonne National Laboratory}
+\affil[c]{University of Toronto}
+
+%\clearpage
+\draftversion{0.0}
+
+%\clearpage
+
+
+\abstracttext{ 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is where the document really begins
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Shorthand for \phantom to use in tables
+\newcommand{\pho}{\phantom{0}}
+\newcommand{\bslash}{\ensuremath{\backslash}}
+\newcommand{\BibTeX}{{\sc Bib\TeX}}
+\newcommand{\BHSH}{{\sc BlackHat}-SHERPA}
+\newcommand{\HWW}{$H\to WW^{*}\to\ll$}
+
+\begin{document}
+
+\tableofcontents
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%
+\input{Introduction}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\input{Theory}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\input{Selection}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\input{Exclusivity}
+%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%
+\input{bkgEst}
+%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%
+%\input{Systematics}
+%%%%%%%%%%%%%%%%%%%%
+%
+%\input{Results}
+%%%%%%%%%%%%%%%%%%%%%
+%
+%\input{Summary}
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\bibliographystyle{atlasnote}
+\bibliography{notex}
+
+\end{document}

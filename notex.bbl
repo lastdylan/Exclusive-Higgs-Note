@@ -1,0 +1,91 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{Hdijet}
+V.~A. Khoze, A.~D. Martin, and M.~Ryskin, {\em {Higgs or dijet production in
+  double rapidity gap events}\/},
+  \href{http://arxiv.org/abs/hep-ph/0006005}{{\tt arXiv:hep-ph/0006005
+  [hep-ph]}}.
+
+\bibitem{canLHC}
+V.~A. Khoze, A.~D. Martin, and M.~Ryskin, {\em {Can the Higgs be seen in
+  rapidity gap events at the Tevatron or the LHC?}\/},
+  \href{http://dx.doi.org/10.1007/s100520000359}{Eur.Phys.J. {\bf C14} (2000)
+  525--534}, \href{http://arxiv.org/abs/hep-ph/0002072}{{\tt
+  arXiv:hep-ph/0002072 [hep-ph]}}.
+
+\bibitem{pionPair}
+R.~Staszewski, P.~Lebiedowicz, M.~Trzebinski, J.~Chwastowski, and A.~Szczurek,
+  {\em {Exclusive $\pi^+\pi^-$ Production at the LHC with Forward Proton
+  Tagging}\/},  \href{http://dx.doi.org/10.5506/APhysPolB.42.1861}{Acta
+  Phys.Polon. {\bf B42} (2011)  1861--1870},
+  \href{http://arxiv.org/abs/1104.3568}{{\tt arXiv:1104.3568 [hep-ex]}}.
+
+\bibitem{CMSmumu}
+CMS, {\em {Exclusive photon-photon production of muon pairs in $pp$ collisions
+  at $\sqrt{s} = 7$ TeV}\/},  \href{http://dx.doi.org/10.1007/JHEP01 (2012)
+  052}{JHEP {\bf 01} (2012)  }.
+
+\bibitem{CMSee}
+CMS, {\em {Search for exclusive or simi-exclusive photon pair production and
+  observation of exclusive and semi-exclusive electron pair production in $pp$
+  collisions at $\sqrt{s} = 7$ TeV}\/},  \href{http://dx.doi.org/10.1007/JHEP11
+  (2012) 080}{JHEP {\bf 11} (2012)  }.
+
+\bibitem{MonteNote}
+{\em Monte Carlo studies of two-photon production of muon pairs\/},  Tech. Rep.
+  ATL-COM-PHYS-2013-1479, October, 2013.
+
+\bibitem{Khoze}
+V.~Khoze, A.~Martin, and M.~Ryskin, {\em {Prospects for new physics
+  observations in diffractive processes at the LHC and Tevatron}\/},
+  \href{http://dx.doi.org/10.1007/s100520100884}{Eur.Phys.J. {\bf C23} (2002)
+  311--327},
+\href{http://arxiv.org/abs/hep-ph/0111078}{{\tt arXiv:hep-ph/0111078
+  [hep-ph]}}.
+%%CITATION = HEP-PH/0111078;%%.
+
+\bibitem{Cudell}
+J.~Cudell, A.~Dechambre, O.~Hernandez, and I.~Ivanov, {\em {Central exclusive
+  production of dijets at hadronic colliders}\/},
+  \href{http://dx.doi.org/10.1140/epjc/s10052-009-0994-2}{Eur.Phys.J. {\bf C61}
+  (2009)  369--390},
+\href{http://arxiv.org/abs/0807.0600}{{\tt arXiv:0807.0600 [hep-ph]}}.
+%%CITATION = ARXIV:0807.0600;%%.
+
+\bibitem{Martin}
+A.~D. Martin and M.~Ryskin, {\em {Unintegrated generalized parton
+  distributions}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevD.64.094017}{Phys.Rev. {\bf D64}
+  (2001)  094017}, \href{http://arxiv.org/abs/hep-ph/0107149}{{\tt
+  arXiv:hep-ph/0107149 [hep-ph]}}.
+
+\bibitem{Dokshitzer1980269}
+Y.~Dokshitzer, D.~Dyakonov, and S.~Troyan, {\em Hard processes in quantum
+  chromodynamics\/},
+  \href{http://dx.doi.org/http://dx.doi.org/10.1016/0370-1573(80)90043-5}{Physics
+  Reports {\bf 58} (1980) no.~5, 269 -- 395}.
+
+\bibitem{Khoze2000wk}
+V.~A. Khoze, A.~D. Martin, and M.~Ryskin, {\em {Soft diffraction and the
+  elastic slope at Tevatron and LHC energies: A MultiPomeron approach}\/},
+  \href{http://dx.doi.org/10.1007/s100520000494}{Eur.Phys.J. {\bf C18} (2000)
+  167--179}, \href{http://arxiv.org/abs/hep-ph/0007359}{{\tt
+  arXiv:hep-ph/0007359 [hep-ph]}}.
+
+\bibitem{ATLASCONF2014060}
+{\em {Observation and measurement of Higgs boson decays to $WW^\ast$ with ATLAS
+  at the LHC}\/},  Tech. Rep. ATLAS-CONF-2014-060, CERN, Geneva, Oct, 2014.
+
+\bibitem{lumi}
+A.~Collaboration, {\em {https://atlas-lumicalc.cern.ch/}\/}, .
+
+\bibitem{Aad2014rra}
+{ATLAS} Collaboration, G.~Aad et al., {\em {Measurement of the muon
+  reconstruction performance of the ATLAS detector using 2011 and 2012 LHC
+  proton-proton collision data}\/},
+  \href{http://dx.doi.org/10.1140/epjc/s10052-014-3130-x}{Eur.Phys.J. {\bf C74}
+  (2014) no.~11, 3130},
+\href{http://arxiv.org/abs/1407.3935}{{\tt arXiv:1407.3935 [hep-ex]}}.
+%%CITATION = ARXIV:1407.3935;%%.
+
+\end{thebibliography}\endgroup
