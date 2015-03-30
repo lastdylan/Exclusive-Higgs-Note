@@ -17,7 +17,7 @@ testlatex:
 testlatex2:
 	latex  ${BASENAME}
 	latex  ${BASENAME}
-#	bibtex ${BASENAME}
+	bibtex ${BASENAME}
 	latex  ${BASENAME}
 	latex  ${BASENAME}
 	dvipdfm -p a4 ${BASENAME}

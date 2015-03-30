@@ -1,4 +1,4 @@
-%\clearpage
+\clearpage
 \section{Event and Object Selection}
 \label{sec:selection}
 
@@ -27,7 +27,11 @@ objects by considering the energy deposited in a cone of $\Delta R = 0.3$
 around the electron object cluster. Track isolation is also considered by taking 
 the sum \pt\ of all the tracks with $\pt>400$~\MeV\ within a cone 
 of size $\Delta R = 0.3$. To separate these electron objects from prompt 
-electrons, impact parameter variables are used.  
+electrons, impact parameter variables are used. The transverse impact parameter $d_0$
+is required to satisfy $|d_0|/\sigma_{d_0}<3.0$ where $\sigma_{d_0}$ is the uncertainty on 
+$d_{0}$. The longitudinal impact parameter must satisy $|z_0\sin\theta|<0.04$ mm. This improves 
+the probability of selecting leptons that originate from the primary vertex. Figure~\ref{fig:electrons}
+shows the \pt\ and $\eta$ distributions for electrons that pass all these requirements.   
 
 \begin{figure}[!h]
 \centering
@@ -35,16 +39,23 @@ electrons, impact parameter variables are used.
 	\includegraphics[width=0.5\linewidth]{em_CutMuElOverlapRemoval_lepPtLead_mh125_log.eps}
 	\includegraphics[width=0.5\linewidth]{em_CutMuElOverlapRemoval_lepEtaLead_mh125_log.eps}\\
 \end{tabular}
-\caption{Electron distributions}
+\caption{\pt\ [left] and $\eta$ [right] distributions for electron candidates that pass 
+all the electron selection criteria. }
 \label{fig:electrons}
 \end{figure}
 %
 \par Candidates for muon objects should be objects with matched hits from the ID and the 
 Muon Spectrometer (MS). The algorithms that match ID tracks to MS tracks are described 
 in detail in Ref.~\cite{Aad2014rra}. These objects are further required to have 
-$\pt > 15$~\GeV\ and must lie within pseudorapidity of 2.47.
+$\pt > 15$~\GeV\ and must lie within pseudorapidity of 2.47. Muon selection is insensitive 
+to the calorimeter crack that covers $1.37<|\eta|<1.52$. That is the reason why the only $\eta$
+requirement imposed on muon candidates is for them to lie within 2.47 in $\eta$.
 The sum of the pixel hits and dead sensors should be at least 1.
-The sum of sct hits and dead sensors should also be at least 5.  
+The sum of sct hits and dead sensors should also be at least 5.  This ensures that the 
+ID track is a good candidate for matching with an MS track. Track isolation criteria is 
+identical to that imposed on electron candidates. No calorimeter isolation is required 
+on muons. Figure~\ref{fig:muons} shows the \pt\ and $\eta$ distribution of muon candidates 
+that pass all the muon selection criteria.
 
 \begin{figure}[!h]
 \centering
@@ -52,23 +63,36 @@ The sum of sct hits and dead sensors should also be at least 5.
 	\includegraphics[width=0.5\linewidth]{me_CutMuElOverlapRemoval_lepPtLead_mh125_log.eps}
 	\includegraphics[width=0.5\linewidth]{me_CutMuElOverlapRemoval_lepEtaLead_mh125_log.eps}\\
 \end{tabular}
-\caption{Muon distributions}
+\caption{\pt\ [left] and $\eta$ [right] distributions for muon candidates that pass all the 
+muon selection criteria.}
 \label{fig:muons}
 \end{figure}
 
-\par Tracks are required to have at least 1 pixel hit and at least 4 sct hits and 
-have at least 400 MeV \pt. They are also required to be within $|\eta|<2.47$.
+\par Electrons and muons can sometimes be very close in $\eta-\phi$ space. If an electron and 
+a muon are within $\Delta R<0.1$, where $\Delta R = \sqrt{\eta^2 + \phi^2}$, the electron is removed and
+the muon is kept. This is motivated by the theory that the muon would have undergone 
+bremsstrahlung. If an electron track is seen in the muon spectrometer, it is removed. If two electrons are 
+within $\Delta R<0.1$, the electron with higher \et\ is kept and the other one is discarded. We will 
+refer to this process as {\it Electron-Muon Removal} in this note. 
+
+\par Tracks are required to have at least 1 pixel hit and at least 4 sct hits. The minimum \pt\ 
+that achieved on these tracks is 400 MeV. Availability of low-\pt\ tracks increases rejection on
+QCD multijets and improves the signal survival efficiency. Reasons for this assertion will become 
+clearer after the exclusivity selection criteria is discussed in detail in section~\ref{sec:exclusivity}.  
+ Track candidates are also required to be within $|\eta|<2.47$. This is in line with the lepton angular 
+selection criteria. Figure~\ref{fig:nTracks} shows the number of tracks that pass this criteria. 
 
 \begin{figure}[!h]
 \centering
 	\includegraphics[width=0.5\linewidth]{emme_CutOSLeptons_nTracks_mh125_log.eps}\\
-\caption{Number of selected tracks}
-\label{fig:nTracks.}
+\caption{Number of track candidates that pass the track selection criteria.}
+\label{fig:nTracks}
 \end{figure}
 
 \par The signal region for events that pass the pre-selection criteria is carefully 
-designed to select events with Higgs properties. An exclusivity requirement is further imposed.
-The lepton with higher \pt\ is required to have $\pt>25$ GeV. This will be refered to as the 'leading 
+designed to select events that have Higgs-like kinematic properties. 
+An exclusivity requirement is further imposed on these events to select events with additional exclusivity-like kinematic properties.
+The lepton with higher \pt\ (of the two selected leptons) is required to have $\pt>25$ GeV. This will be refered to as the 'leading 
 lepton'. The second lepton, with lower \pt\ is required to have $\pt>15$ GeV. It will 
 be refered to as the 'sub-leading lepton'. The high \pt\ selection on the leptons  is 
 meant to reduce W+jets and QCD multi-jets backgrounds, where low-\pt\ jets are 
@@ -78,10 +102,10 @@ as 'OS Leptons' in this note.
 \par The invariant mass of the dilepton system \mll, is demanded to 
 be fall within 10 GeV and 55 GeV. The reason for a lower bound is that 
 some of the backgrounds such at Z+jets are not modelled correctly at low \mll. In this analysis
-only Z+jets MC samples generated at $\mll>10$ GeV are used. Figure~\ref{fig:mllOSLeptons}
+only Z+jets MC samples generated at $\mll>10$ GeV are used. Figure~\ref{fig:mllOSleptons}
 shows the \mll\ distribution for events that pass the preselection cuts, lepton \pt\ cuts
 and the opposite sign requirement on the leptons. The $\mll>10$ GeV cut yields a 
-signal survival efficiency of 98\%. Figure~\ref{fig:mllOSLeptons} also justifies an upper bound on 
+signal survival efficiency of 98\%. Figure~\ref{fig:mllOSleptons} also justifies an upper bound on 
 \mll\ for Higgs events. Since the Higgs boson is of spin zero, \mll\ tends to peak at lower
  values than for the WW backgrounds. A $\mll<55$ GeV cut rejects 75\% of inclusive WW background 
 and keeps 86\% of signal. 
@@ -123,10 +147,13 @@ plane \met\ is to leptons and jets:
 					\end{cases}
 \end{equation}  
 
-where $\Delta\phi_{near}$ is the azimuthal separation of the \met\ and the nearest 
-high-\pt jet or lepton. Figure ... shows ...
-
-show plot of METRel.... it should prove that Ztautau is reduced by cutting on it.  
+where $\Delta\phi_{near}$ is the azimuthal separation of \met\ and the nearest 
+high-\pt jet or lepton. Figure~\ref{met} shows \met\ [left] and \metRel\ [right] for events that pass the 
+pre-selection, electron-muon removal cuts, lepton \pt\ cuts, the 10 GeV \mll minimum requirement and the opposite sign requirement
+on the leptons. For events with 0 or 1 jets, we demand $\met>20$ GeV. For events with 
+2 or more jets, we demand  $\metRel>25$ GeV. These criteria are discussed in detail, with 
+supporting \met\ and \metRel\ distributions, in Ref.~\cite{ATLASCONF2014060}. As a result Drell-Yan \tautau\ 
+and backgrounds with a misidentified lepton are reduced. 
 
 \begin{figure}[!h]
 \centering
@@ -134,35 +161,51 @@ show plot of METRel.... it should prove that Ztautau is reduced by cutting on it
 	\includegraphics[width=0.5\linewidth]{emme_CutZVeto_MET_TrackHWW_Clj_mh125_log.eps}
 	\includegraphics[width=0.5\linewidth]{emme_CutZVeto_METRel_mh125_log.eps}\\
 \end{tabular}
-\caption{Talk about MET selection}
+\caption{\met\ [left] and \metRel\ [right] for events that pass pre-selection, electron-muon removal, lepton \pt,
+$\mll>10$ GeV cut and the opposite sign requirement on the leptons. These variables are crucial in reducing 
+Drell-Yan \tautau\ and those backgrounds that have a misidentified lepton.}
 \label{fig:met}
 \end{figure}
 
-\par 
-talk about dphillmet and add a plot....
+\par To ensure that \met\ is not mismeasured, it is important to establish some separation in $\phi$ 
+between \met\ and the dilepton system. The variable \dphillmet\ shown in Figure~\ref{fig:dphillmet}
+quantifies this separation. We demand $\dphillmet>\pi/2$ for the signal region. As shown in Figure~\ref{fig:dphillmet} 
+this requirement suppresses W+jets and Drell-Yan \tautau. \ptll\ is also used in this analysis to suppress
+\tautau\ Drell-Yan backgrounds. The right plot in Figure~\ref{fig:dphillmet} shows that $Z/\gamma^*\to\tautau$ tends to 
+have low \pt. In this analysis we demand $\ptll>30$ GeV and keep 90\% of signal. 
+
 \begin{figure}[!h]
 \centering
-	\includegraphics[width=0.5\linewidth]{emme_CutMETRel_DPhillMET_TrackHWW_Clj_mh125_log.eps}\\
-\caption{dphillmet}
+\begin{tabular}{c}
+	\includegraphics[width=0.5\linewidth]{emme_CutMETRel_DPhillMET_TrackHWW_Clj_mh125_log.eps}
+	\includegraphics[width=0.5\linewidth]{emme_CutDPhillMET_Ptll_mh125_log.eps}\\
+\end{tabular}
+\caption{\dphillmet\ [left] quantifies separation in $\phi$-space between \met\ and the dilepton system. This 
+is important to suppress mismeasurement of \met\ and further suppresses W+jets and Drell-Yan \tautau\ backgrounds.
+\ptll\ [right] is also a good variable for suppressing Drell-Yan \tautau. Signal region demands $\ptll>30$ GeV which keeps 
+90\% of the signal.}
 \label{fig:dphillmet}
 \end{figure}
 
-\par 
-talk about ptll and add a plot ...
-\begin{figure}[!h]
-\centering
-	\includegraphics[width=0.5\linewidth]{emme_CutDPhillMET_Ptll_mh125_log.eps}\\
-\caption{ptll}
-\label{fig:ptll}
-\end{figure}
+\par The angular separation in $\phi$ between the two leptons \dfll\ which is closely related to \mll\ 
+is used to reduce the WW continuum. We require that $\dfll>1.8$. This exploits the fact that the 
+Higgs has spin zero. Figure~\ref{fig:dphill} shows that both WW and Drell-Yan are reduced, while maintaining 
+90\% of signal. 
 
-\par talk about dphill and add a plot
+
 \begin{figure}[!h]
 \centering
 	\includegraphics[width=0.5\linewidth]{emme_CutTopoMll_DPhill_mh125_log.eps}\\
-\caption{dphill}
+\caption{\dfll distribution. The $\dfll<1.8$ cut reduces Drell Yan and WW backgrounds while 
+keeping 90\% of signal.}
 \label{fig:dphill}
 \end{figure}
+
+\par Table~\ref{table:sr} summarizes the selection criteria for signal events. Signal, ggF and WW yields 
+are estimated at each cut level. {\it Blinding} refers to all the pre-selection cuts. The rest of the cuts
+listed in the table are self-explanatory. Additional exclusivity cuts are imposed on Higgs-like events to 
+select exclusive Higgs events. These will be discussed in Section~\ref{section:exclusivity}. Signal yields 
+have been scaled by 100.
 
 \begin{table}
 \begin{center}
@@ -175,7 +218,7 @@ Cut & Excl. H & ggF H & $WW$ & Excl. $W^{+}W^{-}$ \\
 lepton $p_{\mathrm{T}}$ 25, 15 GeV & 4.59 $\pm$ 0.04 & 434.84 $\pm$ 0.86 & 10657.89 $\pm$ 17.79 & 5.84 $\pm$ 0.03 \\
 OS leptons & 4.59 $\pm$ 0.04 & 434.23 $\pm$ 0.86 & 10618.52 $\pm$ 17.76 & 5.82 $\pm$ 0.03 \\
 $m_{\ell\ell} > 10$ GeV & 4.52 $\pm$ 0.04 & 430.02 $\pm$ 0.86 & 10606.74 $\pm$ 17.75 & 5.82 $\pm$ 0.03 \\
-$E^{\mathrm{miss}}_{\mathrm{T,rel}} > 25$ GeV & 4.27 $\pm$ 0.04 & 358.80 $\pm$ 0.78 & 8494.57 $\pm$ 15.88 & 5.23 $\pm$ 0.03 \\
+$\met,\metRel > 20, 25$ GeV & 4.27 $\pm$ 0.04 & 358.80 $\pm$ 0.78 & 8494.57 $\pm$ 15.88 & 5.23 $\pm$ 0.03 \\
 $\Delta\phi_{\ell\ell, MET} > 1.57$ & 4.27 $\pm$ 0.04 & 318.16 $\pm$ 0.74 & 7590.42 $\pm$ 15.01 & 5.22 $\pm$ 0.03 \\
 $p_{\mathrm{T},\ell\ell}>$30 GeV & 3.83 $\pm$ 0.04 & 285.01 $\pm$ 0.70 & 6183.69 $\pm$ 13.54 & 4.63 $\pm$ 0.03 \\
 $m_{\ell\ell}<55$ GeV & 3.28 $\pm$ 0.03 & 246.08 $\pm$ 0.65 & 1578.43 $\pm$ 6.80 & 0.81 $\pm$ 0.01 \\
@@ -184,6 +227,8 @@ $\Delta\phi_{\ell\ell}<1.8$ & 2.98 $\pm$ 0.03 & 231.26 $\pm$ 0.63 & 1462.57 $\pm
 Exclusivity Cuts & & & &
 \end{tabular}
 }
-\caption{Yields are normalized to 20.3\ifb. Define 'Blinding'}
+\caption{Signal selection criteria. {\it Blinding} refers to all the pre-selection cuts. Yields are normalized to 20.3\ifb and 
+signal is scaled by a normalization/scale factor (NF) of 100.}
+\label{table:sr}
 \end{center}
 \end{table}

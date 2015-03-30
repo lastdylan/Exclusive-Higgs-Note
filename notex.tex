@@ -8,6 +8,7 @@
 \usepackage{atlasphysics}
 \usepackage{geometry,color,graphicx}
 \usepackage{subfigure}
+\usepackage{float}
 \usepackage{mathrsfs}
 \usepackage{rotating}
 \usepackage{multirow}
@@ -57,8 +58,9 @@
 \author[b]{L.~Nodulman} %
 \author[c]{C.~C.~Chau} %
 \author[b]{S.~Chekanov} %
-\author[a]{J.~Griffith}%
-\author[a]{B.~Blair}%
+\author[a]{J.~Griffiths}%
+\author[b]{B.~Blair}%
+\author[a]{J.~Yu}%
 
 \affil[a]{University of Texas at Arlington}
 \affil[b]{Argonne National Laboratory}
@@ -71,6 +73,15 @@
 
 
 \abstracttext{ 
+The exclusive Higgs could be a clean channel to study Higgs properties. The most popular 
+theoretical model for the exclusive Higgs predicts a total cross section of 3 fb at LHC 
+8 TeV collision energy. This note 
+summarizes a search for the exclusive Higgs boson using ATLAS 8 TeV data, using the 
+\hwwll\ decay channel with different flavor leptons in the final state. Selection 
+criteria were developed to isolate exclusive processes from inclusive processes. Selection 
+criteria that isolate Higgs-like events that were inherited from previous Higgs searches 
+were also utilized. A limit of 770 fb on the total cross section of the exclusive Higgs 
+production was obtained. 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,16 +119,16 @@
 %%%%%%%%%%%%%%%%%%%%
 \input{bkgEst}
 %%%%%%%%%%%%%%%%%%%%
-%
-%%%%%%%%%%%%%%%%%%%%%
-%\input{Systematics}
+
 %%%%%%%%%%%%%%%%%%%%
-%
-%\input{Results}
-%%%%%%%%%%%%%%%%%%%%%
-%
-%\input{Summary}
-%%%%%%%%%%%%%%%%%%%%%
+\input{Systematics}
+%%%%%%%%%%%%%%%%%%%
+
+\input{Results}
+%%%%%%%%%%%%%%%%%%%%
+
+\input{Summary}
+%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
